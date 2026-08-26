@@ -112,6 +112,7 @@ body {
 
   .nav{
     display:flex; justify-content:space-between; align-items:center;
+    position:relative;
     font-family:'IBM Plex Mono', monospace;
     font-size:11px;
     letter-spacing:0.16em;
@@ -121,6 +122,24 @@ body {
     border-bottom:1px solid var(--line-soft);
     margin-bottom:0;
   }
+  .nav .home-diamond{
+    position:absolute;
+    left:calc(clamp(4px, 5vw, 64px) - 24px);
+    top:50%;
+    width:12px;
+    height:12px;
+    margin:0;
+    background:#8f969c;
+    transform:translateY(-50%) rotate(45deg);
+    z-index:2;
+  }
+  .nav .home-diamond::after{ display:none; }
+  .nav .home-diamond:hover,
+  .nav .home-diamond:focus-visible{
+    background:#697177;
+    transform:translateY(-50%) rotate(45deg) scale(1.15);
+  }
+  .nav > a:not(.home-diamond){ margin-left:0; }
   .nav a{
     color:var(--ink); text-decoration:none;
     position:relative; margin-left:32px;
@@ -2661,3 +2680,21 @@ section[id] + section[id] { border-top: 1px solid var(--line); }
 
 
 >>>>>>> 3836ed85517a59ccaf76653325d257db1b9719cc
+
+.home-diamond {
+  position: absolute;
+  top: 42px;
+  left: clamp(24px, 5vw, 64px);
+  width: 12px;
+  height: 12px;
+  background: #9da4aa;
+  transform: rotate(45deg);
+  transition: background-color .3s ease, transform .3s ease;
+  z-index: 1;
+}
+
+.home-diamond:hover,
+.home-diamond:focus-visible {
+  background: #697177;
+  transform: rotate(45deg) scale(1.15);
+}

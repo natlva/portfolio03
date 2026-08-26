@@ -12,11 +12,6 @@ const reduceMotion = window.matchMedia(
   "(prefers-reduced-motion: reduce)"
 ).matches;
 
-// Check if this is the first page load
-const isFirstLoad = !sessionStorage.getItem('hasLoadedOnce');
-sessionStorage.setItem('hasLoadedOnce', 'true');
-
-
 // ---------- Loader progress circle ----------
 
 const R = 86;
@@ -54,10 +49,7 @@ if (loaderMark) {
 
 // ---------- Loader animation ----------
 
-if (!isFirstLoad) {
-  // Skip loader animation on return visits
-  finishLoad();
-} else if (reduceMotion) {
+if (reduceMotion) {
 
   if (loaderPct) {
     loaderPct.textContent = "100";
