@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading — Natalie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,340;9..144,500&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css"> 
+
+<script src="main.js" defer></script>
+
+</head>
+
+
+
+
+<body>
+
+  <div id="loader">
+    <div class="rings">
+      <div class="ring-outer"></div>
+      <svg class="ring-progress-svg" viewBox="0 0 200 200">
+        <circle id="progressCircle" cx="100" cy="100" r="86"></circle>
+      </svg>
+      <div class="loader-center">
+        <div class="loader-mark" id="loaderMark"> </div>
+        <div class="loader-pct" id="loaderPct">0</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="hero">
+    <nav class="nav">
+      <div>Natalie Alvarenga</div>
+<div>
+    <a href="events.html">Events</a>
+    <a href="photo.html">Photo</a>
+    <a href="film.html">Film</a>
+</div>    </nav>
+
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="eyebrow">Art direction · Photography · Event Management</div>
+        <h1>
+          <span class="word"><span>Natalie</span></span><br>
+          <span class="word"><span>Studio</span></span>
+        </h1>
+        <p class="tagline">
+
+         Working across production, blending event management, project coordination, art direction, and photography. Experienced in high‑profile fashion, beauty, and entertainment projects while collaborating with cleints like CFDA, Es Devlin, TikTok, and Roku.</p>
+         
+        <div class="hero-footer"> </div>
+      </div>
+
+
+
+
+
+
+      <div class="carousel" id="carousel">
+        <!-- slides injected by JS -->
+        <div class="carousel-controls">
+          <div class="carousel-count" id="carouselCount">01 — 05</div>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <div class="carousel-arrows">
+            <button class="carrow" id="prevBtn" aria-label="Previous image">←</button>
+            <button class="carrow" id="nextBtn" aria-label="Next image">→</button>
+ 
+
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>

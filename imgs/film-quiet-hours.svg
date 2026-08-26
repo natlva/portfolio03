@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f5efe8"/>
+  <rect x="80" y="90" width="640" height="420" rx="24" fill="#ffffff"/>
+  <rect x="120" y="140" width="260" height="220" rx="16" fill="#c9b8a0"/>
+  <rect x="410" y="170" width="240" height="180" rx="16" fill="#8d8b7e"/>
+  <circle cx="600" cy="420" r="90" fill="#d8c5a2"/>
+  <path d="M140 420c40-80 120-120 220-120 90 0 160 30 220 90" stroke="#4d4b43" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <text x="400" y="545" text-anchor="middle" font-family="Georgia, serif" font-size="36" fill="#222">Quiet Hours</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f6efe7"/>
+  <rect x="90" y="100" width="620" height="400" rx="28" fill="#ffffff"/>
+  <rect x="140" y="150" width="520" height="240" rx="22" fill="#3c3f44"/>
+  <rect x="180" y="200" width="180" height="140" rx="16" fill="#efb66f"/>
+  <rect x="390" y="200" width="180" height="140" rx="16" fill="#d95f4d"/>
+  <path d="M150 420c80-90 160-130 250-130 90 0 180 40 250 130" stroke="#2f2f2f" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <text x="400" y="545" text-anchor="middle" font-family="Georgia, serif" font-size="36" fill="#222">Urban Rhythms</text>
+</svg>

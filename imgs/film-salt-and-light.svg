@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#eef5f4"/>
+  <rect x="90" y="100" width="620" height="400" rx="28" fill="#ffffff"/>
+  <path d="M170 420c90-140 180-220 280-220 100 0 190 70 250 220" fill="#d9e9e3"/>
+  <path d="M170 420c60-70 120-120 220-120 100 0 180 50 250 120" stroke="#4a6a5a" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <circle cx="260" cy="230" r="75" fill="#f0d4a8"/>
+  <circle cx="522" cy="230" r="95" fill="#8eb6a1"/>
+  <text x="400" y="545" text-anchor="middle" font-family="Georgia, serif" font-size="36" fill="#222">Salt &amp; Light</text>
+</svg>

@@ -1,0 +1,129 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — Natalie Alvarenga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,340;9..144,500&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" style="text-decoration: none; color: inherit;">Natalie Alvarenga</a>
+    <div>
+      <a href="events.html">Events</a>
+      <a href="photo.html">Photo</a>
+      <a href="film.html">Film</a>
+    </div>
+  </nav>
+  <main>
+    <div class="eyebrow-section">
+      <div class="eyebrow">Portrait · Editorial · Product</div>
+    </div>
+    <section id="photography">
+      <div class="section-label reveal">
+        <span class="section-num">02</span>
+        <span class="section-name">Photography</span>
+      </div>
+      <div class="section-subtitle reveal">Portrait · Editorial · Product</div>
+      <div class="photo-stack reveal">
+        <div class="photo-row split">
+          <div class="photo-block" data-folder="jessie">
+            <img src="imgs/photos/jessie/j1.jpg" alt="Natural Light">
+          </div>
+          <div class="photo-block" data-folder="lesai">
+            <img src="imgs/photos/lesai/sk-40BN.jpg" alt="Lesai">
+          </div>
+        </div>
+        <div class="photo-row split">
+          <div class="photo-block" data-folder="gabedits">
+            <img src="imgs/photos/gabedits/DSC01042.jpg" alt="Texture Study">
+          </div>
+          <div class="photo-block" data-folder="gabfashion2">
+            <img src="imgs/photos/gabfashion2/gab1.jpg" alt="Gab Fashion">
+          </div>
+        </div>
+        <div class="photo-row split">
+          <div class="photo-block" data-folder="luna">
+            <img src="imgs/photos/luna/luna2fix.jpg" alt="Luna">
+          </div>
+          <div class="photo-block" data-folder="luisabeauty">
+            <img src="imgs/photos/luisabeauty/DSC00621.jpg" alt="Luisabeauty">
+          </div>
+        </div>
+        <div class="photo-row split">
+          <div class="photo-block" data-folder="ksnature">
+            <img src="imgs/photos/ksnature/plast.jpg" alt="Ksnature">
+          </div>
+          <div class="photo-block" data-folder="kris1">
+            <img src="imgs/photos/kris1/kris2.jpg" alt="Kris">
+          </div>
+        </div>
+        <div class="photo-row split">
+          <div class="photo-block" data-folder="floral">
+            <img src="imgs/photos/floral/DSC07151-2.jpg" alt="Artist Series">
+          </div>
+          <div class="photo-block" data-folder="snow">
+            <img src="imgs/photos/snow/snowwwyy.jpg" alt="Snow">
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-modal" id="photo-gallery-modal">
+        <button type="button" class="gallery-close" id="photo-gallery-close" aria-label="Close gallery">&times;</button>
+        <div class="gallery-grid" id="photo-gallery-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const folderImages = {
+      floral: ['DSC07151-2.jpg', 'IMG_7941.JPG'],
+      gabedits: ['DSC00730.jpg', 'DSC00747.jpg', 'DSC00813.jpg', 'DSC00815.jpg', 'DSC00818.jpg', 'DSC00825.jpg', 'DSC00827.jpg', 'DSC00950.jpg', 'DSC00953.jpg', 'DSC00966.jpg', 'DSC00967.jpg', 'DSC00969.jpg', 'DSC00970.jpg', 'DSC00971.jpg', 'DSC00975.jpg', 'DSC00982.jpg', 'DSC00983.jpg', 'DSC00986.jpg', 'DSC00988.jpg', 'DSC00992.jpg', 'DSC00994.jpg', 'DSC00996.jpg', 'DSC01000.jpg', 'DSC01008.jpg', 'DSC01009.jpg', 'DSC01016.jpg', 'DSC01019.jpg', 'DSC01029.jpg', 'DSC01031.jpg', 'DSC01032.jpg', 'DSC01034.jpg', 'DSC01036.jpg', 'DSC01037.jpg', 'DSC01042.jpg', 'DSC01044.jpg', 'DSC01064.jpg', 'DSC01065.jpg', 'DSC01066.jpg', 'DSC01067.jpg', 'DSC01068.jpg', 'DSC01070.jpg', 'DSC01071.jpg', 'DSC01072.jpg', 'DSC01073.jpg', 'DSC01074.jpg', 'DSC01076.jpg', 'DSC01077.jpg', 'DSC01081.jpg', 'DSC01083.jpg', 'DSC01084.jpg', 'DSC01086.jpg', 'DSC01093.jpg', 'DSC01098.jpg', 'DSC01099.jpg', 'DSC01103.jpg'],
+      gabfashion2: ['DSC00836.jpg', 'DSC00837.jpg', 'DSC00839.jpg', 'DSC00860.jpg', 'DSC00862.jpg', 'DSC00865.jpg', 'DSC00885.jpg', 'DSC00892.jpg', 'DSC00911.jpg', 'DSC00912.jpg', 'DSC00913.jpg', 'DSC00915.jpg', 'DSC00920.jpg', 'DSC00922.jpg', 'DSC00924.jpg', 'DSC00929.jpg', 'DSC00931.jpg', 'DSC00934.jpg', 'DSC00939.jpg', 'DSC00940.jpg', 'DSC00941.jpg', 'DSC00944.jpg', 'DSC00946.jpg', 'DSC00949.jpg', 'gab1.jpg'],
+      jessie: ['j1.jpg', 'DSC00188 - Copy.jpg', 'DSC00236.jpg', 'DSC00389.jpg', 'DSC00406.jpg', 'DSC00572.jpg', 'DSC00633.jpg', 'DSC00985.jpg', 'DSC01081-2.jpg', 'DSC01149.jpg', 'DSC01232-3.jpg', 'DSC01232.jpg', 'DSC01281.jpg', 'DSC01283.jpg', 'DSC01310.jpg', 'DSC01367.jpg', 'DSC01391.jpg', 'DSC01412.jpg', 'DSC01433.jpg'],
+      kris1: ['IMG_8415.jpg', 'IMG_8501.jpg', 'IMG_8512-2.jpg', 'kris2.jpg', 'yes14.jpg'],
+      ksnature: ['a23q.jpg', 'eyeball.jpg', 'flyaways final0989.jpg', 'jfgfmi-23hj.jpg', 'plast-1.jpg', 'plast.jpg', 'SARAH U.jpg', 'pp-1.jpg'],
+      lesai: ['L-45qwdas.jpg', 'lesai small ls.jpg', 'sk-40BN.jpg', 'small-32BN.jpg', 'small-33HJK.jpg', 'small-35BN.jpg', 'small-42BN.jpg', 'small-6.jpg', 'Untitled-1 copywedw.jpg'],
+      luisabeauty: ['DSC00592.jpg', 'DSC00602.jpg', 'DSC00620.jpg', 'DSC00621.jpg', 'DSC00622.jpg', 'DSC00662.jpg', 'DSC00671.jpg', 'DSC00672.jpg', 'DSC00673.jpg', 'DSC00684.jpg'],
+      luna: ['DSC09003.jpg', 'luna1.jpg', 'luna2fix.jpg', 'okok3lunasmall.jpg'],
+      snow: ['less blue edit-46.jpg', 'less blue edit-47.jpg', 'less blue edit-48.jpg', 'less blue edit-49.jpg', 'less blue edit-50.jpg', 'less blue edit-51.jpg', 'less blue edit-53.jpg', 'less blue edit-54.jpg', 'less blue edit-55.jpg', 'less blue edit-56.jpg', 'less blue edit-57.jpg', 'less blue edit-58.jpg', 'snowwwyy.jpg', 'snowwwyy2.jpg']
+    };
+
+    const galleryModal = document.getElementById('photo-gallery-modal');
+    const galleryGrid = document.getElementById('photo-gallery-grid');
+    const galleryClose = document.getElementById('photo-gallery-close');
+
+    const openGallery = (folder) => {
+      const files = folderImages[folder];
+      if (!files) return;
+      galleryGrid.innerHTML = files
+        .map((file) => `<div class="gallery-item"><img src="${encodeURI(`imgs/photos/${folder}/${file}`)}" alt="${folder}" loading="lazy"></div>`)
+        .join('');
+      galleryModal.classList.add('open');
+      document.body.classList.add('gallery-lock');
+    };
+
+    const closeGallery = () => {
+      galleryModal.classList.remove('open');
+      document.body.classList.remove('gallery-lock');
+    };
+
+    document.querySelectorAll('.photo-block[data-folder]').forEach((block) => {
+      block.addEventListener('click', () => openGallery(block.dataset.folder));
+    });
+
+    galleryClose.addEventListener('click', closeGallery);
+    galleryModal.addEventListener('click', (event) => {
+      if (event.target === galleryModal) closeGallery();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeGallery();
+    });
+  </script>
+</body>
+</html>
+
