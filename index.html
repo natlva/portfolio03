@@ -23,7 +23,13 @@
     <div class="rings">
       <div class="ring-outer"></div>
       <svg class="ring-progress-svg" viewBox="0 0 200 200">
-        <circle id="progressCircle" cx="100" cy="100" r="86" fill="none" stroke="#16233d" stroke-width="1" style="stroke: #16233d;"></circle>
+        <defs>
+          <linearGradient id="loaderRingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#252a30"></stop>
+            <stop offset="100%" stop-color="#b8bdc2"></stop>
+          </linearGradient>
+        </defs>
+        <circle id="progressCircle" cx="100" cy="100" r="86" fill="none" stroke-width="3" stroke-linecap="round" style="stroke: url(#loaderRingGradient); stroke-width: 3px;"></circle>
       </svg>
       <div class="loader-center">
         <div class="loader-mark" id="loaderMark"> </div>
