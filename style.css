@@ -67,7 +67,7 @@ body {
   }
   .ring-progress-svg circle{
     fill:none;
-    stroke:var(--ink);
+    stroke:#16233d;
     stroke-width:1;
   }
 
@@ -1398,7 +1398,7 @@ body {
   }
   .ring-progress-svg circle{
     fill:none;
-    stroke:var(--ink);
+    stroke:#16233d;
     stroke-width:1;
   }
 
