@@ -51,7 +51,7 @@ body {
     display:flex; align-items:center; justify-content:center;
     z-index:30;
   }
-  #loader.done{ opacity:0; transition: opacity .8s ease; pointer-events:none; }
+  #loader.done{ opacity:0; transform:scale(1.015); filter:blur(1px); transition:opacity 1.15s cubic-bezier(.22,1,.36,1), transform 1.15s cubic-bezier(.22,1,.36,1), filter 1.15s cubic-bezier(.22,1,.36,1); pointer-events:none; }
 
   .rings{ position:relative; width:200px; height:200px; }
 
@@ -108,7 +108,7 @@ body {
     padding: 36px clamp(24px, 5vw, 64px) 56px;
     display:flex; flex-direction:column;
   }
-  #hero.in{ opacity:1; transition: opacity 1s ease; }
+  #hero.in{ opacity:1; transition: opacity 1.2s cubic-bezier(.22,1,.36,1); }
 
   .nav{
     display:flex; justify-content:space-between; align-items:center;
@@ -1382,7 +1382,7 @@ body {
     display:flex; align-items:center; justify-content:center;
     z-index:30;
   }
-  #loader.done{ opacity:0; transition: opacity .8s ease; pointer-events:none; }
+  #loader.done{ opacity:0; transform:scale(1.015); filter:blur(1px); transition:opacity 1.15s cubic-bezier(.22,1,.36,1), transform 1.15s cubic-bezier(.22,1,.36,1), filter 1.15s cubic-bezier(.22,1,.36,1); pointer-events:none; }
 
   .rings{ position:relative; width:200px; height:200px; }
 
@@ -1439,7 +1439,7 @@ body {
     padding: 36px clamp(24px, 5vw, 64px) 56px;
     display:flex; flex-direction:column;
   }
-  #hero.in{ opacity:1; transition: opacity 1s ease; }
+  #hero.in{ opacity:1; transition: opacity 1.2s cubic-bezier(.22,1,.36,1); }
 
   .nav{
     display:flex; justify-content:space-between; align-items:center;
