@@ -123,7 +123,7 @@ const slidesData = [
 
   {
     title: "Photo",
-    image: "imgs/photos/gabedits/gab1.jpg",
+    image: "imgs/photos/gabedits/DSC01042.jpg",
     page: "#photography"
   }
 ];
