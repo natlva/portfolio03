@@ -110,12 +110,6 @@ const countEl = document.getElementById("carouselCount");
 
 const slidesData = [
   {
-    title: "Events",
-    image: "imgs/todoevents/thomfall2423/tb23.png",
-    page: "#events"
-  },
-
-  {
     title: "Film",
     image: "imgs/photos/jessie/j1.jpg",
     page: "#film"
@@ -446,12 +440,6 @@ const countEl = document.getElementById("carouselCount");
 // ---------- Carousel data ----------
 
 const slidesData = [
-  {
-    title: "Events",
-    image: "imgs/todoevents/thomfall2423/tb23.png",
-    page: "#events"
-  },
-
   {
     title: "Film",
     image: "imgs/photos/jessie/j1.jpg",
